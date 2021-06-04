@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="barchart.css">
+    <link rel="stylesheet" href="./barchart.css">
 </head>
 <body>
 
@@ -19,12 +19,15 @@
     <div>
         <li>avg:{{avg}}</li>
     </div>
+    <div>
+        <li>variance:{{vari}}</li>
+    </div>
 </div>
 
 <div class="chart-wrap vertical">
     <div class="grid">
         {% for b in datalist %}
-        <div class="bar" style="--bar-value:{{b}}%;" data-name="{{b}}°C" title="Temperature (*C)"></div>
+        <div class="bar" style="--bar-value:{{b}}%;" data-name="{{b}} C" title="Temperature (*C)"></div>
         {% endfor %}
     </div>
 </div>
