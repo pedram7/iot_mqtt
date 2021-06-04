@@ -22,3 +22,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+""" send GET to message the client: 
+https://api.telegram.org/bot1815234860:AAHNqiI5pDl0YyIt30qLlJzXZPWbe7rVJNE/sendMessage?chat_id=<chatid>&text=<message text>
+"""

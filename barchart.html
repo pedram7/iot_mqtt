@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="barchart.css">
+</head>
+<body>
+
+<div style="margin-top:2%;">
+    <div>
+        <li>min:{{min}}</li>
+    </div>
+    <div>
+        <li>max:{{max}}</li>
+    </div>
+    <div>
+        <li>avg:{{avg}}</li>
+    </div>
+</div>
+
+<div class="chart-wrap vertical">
+    <div class="grid">
+        {% for b in datalist %}
+        <div class="bar" style="--bar-value:{{b}}%;" data-name="{{b}}°C" title="Temperature (*C)"></div>
+        {% endfor %}
+    </div>
+</div>
+
+</body>
+</html>
